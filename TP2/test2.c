@@ -71,12 +71,13 @@ void afficher2(int nb_lignes, int nb_colonnes, int **mat)
 void init(int ***mat)
 {
     int nb_ligne ,nb_colonne; 
+    printf("sizes %d %d %d\n", sizeof(int), sizeof(int *), sizeof(char*)) ; 
     printf("Entrez le nombre de ligne : ") ; 
     scanf("%d",&nb_ligne) ; 
     printf("Entrez le nombre de colonne : ") ; 
     scanf("%d",&nb_colonne) ; 
 
-    *mat=malloc(nb_ligne*sizeof(int)) ; 
+    *mat=malloc(nb_ligne*sizeof(int*)) ; 
     for (int i=0; i<nb_ligne; i++ )
     {
         *(*(mat)+i)= malloc(nb_colonne*sizeof(int)); 
