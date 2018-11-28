@@ -16,7 +16,7 @@ void saisie( int nb_ligne, int nb_colonne, int tab[nb_ligne][nb_colonne])
     for(i=0; i<nb_ligne ;i++)
     {   for(j=0;j<nb_colonne; j++) 
         {
-            printf("Entrez le nombre pour la case : [%d] [%d] \n",i+1,j+1) ; 
+            printf("Entrez le nombre pour la case : [%d] [%d] \n",i,j) ; 
             scanf("%d",&(tab[i][j])); 
         }
     }
@@ -53,7 +53,7 @@ void saisiep(int nb_ligne, int nb_colonne, int *tab )
     for(i=0; i<nb_ligne; i++)
     {   for(j=0;j<nb_colonne; j++) 
         {
-            printf("Entrez le nombre pour la case : [%d] [%d]:  ",i+1,j+1) ; 
+            printf("Entrez le nombre pour la case : [%d] [%d]:  ",i,j) ; 
             scanf("%d",tab+nb_colonne*i+j); 
 
         }

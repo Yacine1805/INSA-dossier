@@ -80,7 +80,7 @@ void init(int ***mat)
     *mat=malloc(nb_ligne*sizeof(int*)) ; 
     for (int i=0; i<nb_ligne; i++ )
     {
-        *(*(mat)+i)= malloc(nb_colonne*sizeof(int)); 
+        *(*(mat)+i)= malloc(nb_colonne*sizeof(int*)); 
     }
 }
 
